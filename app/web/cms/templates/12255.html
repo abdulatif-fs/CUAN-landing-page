@@ -1,0 +1,120 @@
+<>
+  <effect
+    meta={{
+      action: {},
+    }}
+    run={async () => {
+      meta.action = {
+        onContentClick: (value) => {
+          const element = document.getElementById(value);
+          element.scrollIntoView({ behavior: "smooth" });
+        },
+      };
+    }}
+  />
+  <>
+    <div class={`flex self-stretch flex-col items-center justify-center`}>
+      <div
+        class={`flex self-stretch items-center justify-between py-1 bg-blue-500`}
+      >
+        <div class={`flex self-stretch space-x-0.5 items-center justify-start`}>
+          <img
+            src="/fimgs/I119_681_13_123.x1.png"
+            style="width: 85px; min-width: 85px; max-width: 85px; height: 92px; min-height: 92px; max-height: 92px;background-image: url('/fimgs/bg-6a8f5dab4d2d5bdfab1924a046956fcbaf596106');background-size:100% 100%;background-repeat:no-repeat;"
+          />
+          <div class={`text-4xl font-bold text-center text-white`}>Cuan </div>
+        </div>
+        <div />
+        <div />
+        <button
+          class={`text-2xl font-semibold text-center text-white`}
+          onClick={() => meta.action.onContentClick("home")}
+        >
+          Home
+        </button>
+        <button
+          class={`text-2xl font-semibold text-center text-white`}
+          onClick={() => meta.action.onContentClick("fitur")}
+        >
+          Fitur
+        </button>
+        <button
+          class={`text-2xl font-semibold text-center text-white`}
+          onClick={() => meta.action.onContentClick("testimoni")}
+        >
+          Testimoni
+        </button>
+        <button
+          class={`text-2xl font-semibold text-center text-white`}
+          onClick={() => meta.action.onContentClick("kontak")}
+        >
+          Kontak Kami
+        </button>
+        <button class={`flex items-center justify-center`}>
+          <img
+            src="/fimgs/119_690.x1.png"
+            class="flex flex-col items-start justify-start"
+            style="width: 50px; min-width: 50px; max-width: 50px; height: 50px; min-height: 50px; max-height: 50px;"
+          />
+          <div class="flex items-start justify-start py-1 pl-5">
+            <div class="text-2xl font-semibold text-center text-white"> </div>
+          </div>
+          <div class="text-2xl font-semibold text-center text-white">Masuk</div>
+        </button>
+        <div />
+      </div>
+    </div>
+    <div
+      class={`flex flex-col items-center justify-center p-1.5 bg-blue-500`}
+      id="home"
+    >
+      <img
+        class={`flex self-stretch flex-col items-center justify-center px-8 py-14 bg-blue-500`}
+        style={`width: 1476px; min-width: 1476px; max-width: 1476px; height: 481px; min-height: 481px; max-height: 481px;`}
+        src="/fimgs/119_698.x1.png"
+      />
+    </div>
+    <img
+      src="/fimgs/136_599.x1.png"
+      class="flex flex-col items-start justify-start"
+      style="width: 1489px; min-width: 1489px; max-width: 1489px; height: 148px; min-height: 148px; max-height: 148px;"
+    />
+    <div
+      class={`flex self-stretch flex-col items-center justify-center`}
+      id="fitur"
+    >
+      <img
+        class={`flex flex-col space-y-5 items-center justify-center px-6 py-2 bg-white`}
+        style={`width: 1489px; min-width: 1489px; max-width: 1489px; height: 451px; min-height: 451px; max-height: 451px;`}
+        src="/fimgs/136_608.x1.png"
+      />
+    </div>
+    <div class={`flex self-stretch flex-col items-start justify-start`}>
+      <img
+        class={`flex flex-1 self-stretch flex-col space-y-5 items-center justify-center px-6 py-2 bg-white`}
+        style={`width: 1489px; min-width: 1489px; max-width: 1489px; height: 432px; min-height: 432px; max-height: 432px;`}
+        src="/fimgs/136_629.x1.png"
+      />
+    </div>
+    <div
+      class={`flex self-stretch flex-col items-start justify-start`}
+      id="testimoni"
+    >
+      <img
+        class={`flex flex-1 self-stretch flex-col items-center justify-center px-44 py-16 bg-blue-500`}
+        style={`width: 1489px; min-width: 1489px; max-width: 1489px; height: 385px; min-height: 385px; max-height: 385px;`}
+        src="/fimgs/136_652.x1.png"
+      />
+    </div>
+    <div
+      class={`flex flex-1 self-stretch flex-col items-start justify-start`}
+      id="kontak"
+    >
+      <img
+        src="/fimgs/136_690.x1.png"
+        class="flex flex-1 self-stretch space-x-10 items-start justify-start px-36 py-24 bg-white"
+        style="width: 1489px; min-width: 1489px; max-width: 1489px; height: 324px; min-height: 324px; max-height: 324px;"
+      />
+    </div>
+  </>
+</>
